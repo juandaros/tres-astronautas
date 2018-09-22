@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <h3>Control de nave espacial</h3>
+    <hr>
+
+    <div class="row border border-danger">
+        <div class="col-bg-6 col-md-6 col-sm-6 col-xl-6">
+            <app-motor #motor [canControl]="true"></app-motor>
+        </div>
+        <div class="col-bg-6 col-md-6 col-sm-6 col-xl-6">
+            <app-cabina [remainingTime]="motor.count"></app-cabina>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<!-- ¡Créditos al autor por la imagen del cohete! <a href='http://dryicons.com/icon/spaceship-icon-5255'> Icon by Dryicons </a> -->
+<div class="space">
+  <section class="status">
+      <h3 [style.color]="whiteText? 'white': 'auto'">¡Planeta {{planeta? planeta: 'X'}} avistado a {{grados? (grados | number: '1.4-4'): 'Y'}} grados!</h3>
+  </section>
+  <section class="rocket">
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <app-motor #motor [canControl]="false"></app-motor>
+        <app-cabina [remainingTime]="motor.count"></app-cabina>
+    </div>
+   
+  </section>
+  <div class="tresA">
+      <img src="/assets/images/logo.png" alt="">
+  </div>
+</div>
+<!-- <link rel="stylesheet" href="./fuselaje.css">
+<link rel="stylesheet" href="../text.css"> -->
