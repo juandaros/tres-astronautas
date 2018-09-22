@@ -1,27 +1,23 @@
-# TresAstronautas
+# Prueba técnica 3 Astronautas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+Prueba hecha por Juan David Robles Del Valle.
 
-## Development server
+## Descripción de la prueba
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+El desarrollo de esta prueba técnica se realiza tomando como derrotero el [enunciado propuesto](https://drive.google.com/file/d/1XTIfpwExjEuXFrLnM1tXUZptEIwaNiok/view?usp=sharing)
 
-## Code scaffolding
+El desarrollo de la prueba consiste en un proyecto de Angular 6 estructurado usando el Command Line Interface (CLI) oficial.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+El proyecto está conformado por 3 rutas descritas a continuación.
 
-## Build
+### 1. /inicio (o /)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+En esta ruta, se muestra la vista de fuselaje que contiene las vistas de motor y cabina.
 
-## Running unit tests
+### 2. /control
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+En esta ruta, se muestran el control de la nave espacial que consiste en la vista del motor y la cabina. Al presionar el botón de ignición (Ignite), comienza el conteo regresivo de 10 segundos visible en el módulo de cabina.
 
-## Running end-to-end tests
+### 3. /planetas/[planeta]
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+En esta ruta, se muestran los datos relacionados al planeta ingresado en la ruta. El planeta ingresado se consulta en la respuesta obtenida al consumir el servicio http://demo0761779.mockable.io/angularspaceship/planets y en caso de estar en dicha respuesta, se muestran los grados de avistamiento y como fondo la imagen de dicho planeta.
