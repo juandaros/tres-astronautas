@@ -15,7 +15,7 @@ export class PlanetasService {
 
   obtenerPlanetas(){
 
-    const url = "http://demo0761779.mockable.io/angularspaceship/planets";
+    const url = "https://demo0761779.mockable.io/angularspaceship/planets";
 
     return new Promise((resolve, reject) => {
 
